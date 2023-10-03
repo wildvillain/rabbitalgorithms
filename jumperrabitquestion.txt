@@ -1,0 +1,18 @@
+
+​Ayrıntılara bakın
+673 / 5.000
+Çeviri sonuçları
+Çeviri sonucu
+We have 100 boxes.
+These boxes are lined up side by side.
+We have a rabbit in one of these boxes.
+We don't know which box the rabbit is in.
+We want to find the rabbit.
+We can check one box at a time.
+While we are checking which box the rabbit is in, the rabbit jumps forward or backward.
+However, this is random and we do not know where the rabbit jumps.
+When it reaches the last box or the first box, it must go 1 step before the point it came to since it cannot go any further.
+It leaves no trace behind.
+We want to catch this rabbit.
+To catch the rabbit, we have to check the box in which the rabbit jumped. Not the box it's in!
+How do we catch this rabbit?
