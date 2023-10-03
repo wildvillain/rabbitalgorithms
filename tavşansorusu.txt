@@ -1,0 +1,13 @@
+100 adet kutucuğumuz var.
+Bu kutucuklar yan yana dizili.
+Bu kutucuklardan bir tanesinin içinde tavşanımız var.
+Tavşan hangi kutuda bilmiyoruz.
+Tavşanı bulmak istiyoruz. 
+Her seferinde bir kutu kontrol edebiliyoruz.
+Tavşan hangi kutuda diye kontrol ettiğimiz sırada tavşan ileri veya geri sıçramaktadır.
+Ancak bu rastgele olup tavşanın nereye zıpladığını bilmemekteyiz.
+Son kutucuğa ya da ilk kutucuğa geldiğinde daha fazla gidemeyeceği için geldiği noktadan 1 adım öncesine gitmelidir. 
+Ayrıca arkasında iz bırakmamaktadır.
+Bu tavşanı yakalamak istiyoruz.
+Tavşanı yakalamak için tavşanın sıçradığı kutuyu kontrol etmeliyiz. Olduğu kutuyu değil!
+Bu tavşanı nasıl yakalarız??
