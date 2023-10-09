@@ -3,7 +3,7 @@ import random
 tavsan = 0
 tahmin = 2
 deneme = 0
-i = 0
+yon = 0
 t = -1
 z = 0
 
@@ -24,10 +24,10 @@ while tavsan != tahmin:
     print("Tavsan bu delikte: ", tavsan)
 
     if tahmin == 2:
-        i = 1
+        yon = 1
         t += 1
     elif tahmin == 99:
-        i = 2
+        yon = 2
         z += 1
 
     if i == 1 and t == 2:
