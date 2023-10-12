@@ -4,8 +4,8 @@ tavsan = 0
 tahmin = 2
 deneme = 0
 yon = 0
-t = -1
-z = 0
+kontrol1 = -1
+kontrol2 = 0
 
 print("100 bosluklu tavsan bulma oyunu icin tavsanin deligini sen belirle oynuyacagini sec: ")
 tavsan = int(input())
@@ -25,14 +25,14 @@ while tavsan != tahmin:
 
     if tahmin == 2:
         yon = 1
-        t += 1
+        kontrol1 += 1
     elif tahmin == 99:
         yon = 2
-        z += 1
+        kontrol2 += 1
 
-    if i == 1 and t == 2:
+    if yon == 1 and kontrol1 == 2:
         tahmin += 1
-    elif i == 2 and z == 2:
+    elif yon == 2 and kontrol2 == 2:
         tahmin -= 1
 
     print("Tahminin bu: ", tahmin)
