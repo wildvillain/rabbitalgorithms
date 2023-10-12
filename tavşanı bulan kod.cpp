@@ -13,12 +13,12 @@ int main(){
     cin>>tavsan;
     cout<<"\nTavsan bulma oyunu: \n";
 
-    while (tahmin != tavsan)
+     do
     {
         sicrama();
         yakalama();
         deneme = deneme+1;
-    } 
+    } while (tahmin != tavsan);
     
     cout<<"Tavsan "<<tavsan<<" deliginde iken tahminin: "<<tahmin;
     cout<<"\n"<<deneme<<". denemede yakaladin";
@@ -34,7 +34,8 @@ int sicrama(){
         {
             ilerigeri=-1;  //eğer çift ise çıkan sonuç 0 çıkacağı için tavşan yerinde sabit kalmasın diye ilerigeri değerini -1 yapıyoruz.
         }
-        tavsan = tavsan + ilerigeri; // Tavşanın o an bulunduğu konumdan rastgele olarak başka bir konuma 1 adım olmak maksadı ile sıçramasını tasvir etmek için tavşanın konumuna ekleniyor.
+        tavsan = tavsan + ilerigeri; 
+        // Tavşanın o an bulunduğu konumdan rastgele olarak başka bir konuma 1 adım olmak maksadı ile sıçramasını tasvir etmek için tavşanın konumuna ekleniyor.
 
         if (tavsan >= 101)
         {
