@@ -6,22 +6,26 @@ using std::cin;
 int sicrama();
 int yakalama();
 
-int tavsan, tahmin=2, yon=0 ,ilerigeri,kontrol=0,kontrol2=0,deneme=0;
+int tavsan, tahmin=2, yon=0 ,ilerigeri,kontrol=0,kontrol2=0,deneme=0; //Başlangıç değerleri ekledim
 
 int main(){
     cout<<"100 bosluklu tavsan bulma oyunu icin tavsanin bulunacagi deligi sec:";
     cin>>tavsan;
     cout<<"\nTavsan bulma oyunu: \n";
+    //*****************Önemli not**************
+    //Neden do while yerine direkt while kullanmadım?
+    //Çünkü tavşan daha sıçramadan yakalama şansımız vardır.
+    //Yani 0. denemede. Bu yüzden do while kullanılmalı.
 
      do
     {
-        sicrama();
-        yakalama();
+        sicrama(); //Tavşanın önce sıçradığı fonksiyon çağırılır.
+        yakalama(); //Sonra yakalama fonksiyonu.
         deneme = deneme+1;
-    } while (tahmin != tavsan);
+    } while (tahmin != tavsan); //Tavşan ile tahmin tutana kadar devam eder
     
     cout<<"Tavsan "<<tavsan<<" deliginde iken tahminin: "<<tahmin;
-    cout<<"\n"<<deneme<<". denemede yakaladin";
+    cout<<"\n"<<deneme<<". denemede yakaladin"; //kaçıncı denemede yakaladığımızı gösterir.
     
     return 0;
 }
@@ -89,6 +93,14 @@ int yakalama() {
     }
     cout<<"Tahminin bu :"<<tahmin<<"\n";
     return 0;
+    //***********************Fun fact**************************
+    //eğer tavşanı 99 seçerseniz 100 den az denemede
+    //eğer tavşanı 98 seçerseniz 100 den fazla denemede bulacaktır :D
+    //kontrol etmeye 2 den başlamamıza rağmen 2 ye daha yakın olan 98 daha geriden gelmektedir :D
+    //Bu da ritim olayını kanıtlar niteliktedir.
+
+
+    
     }
 
 
